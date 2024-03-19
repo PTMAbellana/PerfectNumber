@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" spacing="10" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.perfectnumber.PerfectNumberFinderController">
+    <children>
+      <Label text="Perfect Number" alignment="CENTER">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+        <HBox spacing="10" alignment="CENTER">
+            <Label prefHeight="17.0" prefWidth="130.0" text="Enter a number:">
+            <font>
+               <Font size="16.0" />
+            </font></Label>
+            <TextField fx:id="numField" />
+        </HBox>
+        <HBox spacing="10" alignment="CENTER">
+            <Label text="Enter number of threads:">
+            <font>
+               <Font size="16.0" />
+            </font></Label>
+            <TextField fx:id="threadField" />
+        </HBox>
+        <Button onAction="#startFindingPerfectNumbers" text="Start" />
+        <HBox fx:id="progressBox" />
+        <TextArea fx:id="resultArea" prefHeight="200" />
+    </children>
+</VBox>

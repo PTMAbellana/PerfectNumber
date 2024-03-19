@@ -1,0 +1,20 @@
+.button{
+    -fx-background-color: White;
+    -fx-font-family: Century Gothic;
+
+}
+.root {
+    -fx-background-color: #48260D;
+}
+.label{
+    -fx-font-family: Century Gothic;
+    -fx-text-fill: White;
+    -fx-font-weight: 700;
+}
+.hbox {
+    -fx-background-color: #0080ff;
+}
+.textfield {
+    -fx-background-color: #0080ff;
+}
+
